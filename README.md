@@ -1,18 +1,33 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+JSON Tree Visualizer 🌳
+An interactive web app to visualize, explore, and search JSON data structures with a beautiful tree diagram. Built using React and React Flow.
+✨ Features
+Paste or type any valid JSON (object or array).
+Visualize objects, arrays, and primitive values as nodes.
+Clean, responsive, and modern UI—with glassmorphism and gradients.
+Search by JSON path (e.g., $.products[0].name), key, or value.
+Matching nodes are highlighted and auto-focused.
+Clear/reset, copy-path-on-click, and download-image features.
+Works great on both desktop and mobile.
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/Dasari-Yashwant-Kumar/JSON-Tree-Visualizer.gitcd JSON-Tree-Visualizer
+2. Install dependencies
+npm install
+3. Start the development server
+npm run dev
+Visit http://localhost:5173 (or as shown in your terminal).
+🛠️ Build for production
+npm run build
+📈 Example JSON
+Paste this or your own:
+{  "products": [    { "id": 1, "name": "Pen", "category": "stationery", "price": 10 },    { "id": 2, "name": "Notebook", "category": "stationery", "price": 50 }  ],  "store": {    "name": "MiniMart",    "open": true  }}
+🔍 How search works
+Path: Use JSONPath ($.products[0].name), or just products[0].name
+Key: Try keys like store
+Value: Any value, like Notebook or MiniMart
+Matching nodes are automatically highlighted and brought into view.
+🖼️ Features
+Responsive Design: Looks great on all devices.
+Visual feedback: Success and error messages for search.
+Node info: Hover to reveal extra node info.
+Glass effect: Modern UI with subtle shadows.
